@@ -1,0 +1,841 @@
+
+ body {
+  font-family: Arial, sans-serif;
+}
+
+ Menu Block */
+.menu-block {
+  background-color: #fff; /* White background */
+ padding: 20px 0;
+}
+
+ Navbar Styles */
+
+
+.navbar-brand h3 {
+  color: #333; /* Dark text color */
+   margin: 0;
+  margin-left: 54px;
+} */
+*/
+ .navbar .nav-item {
+  margin-left: 20px;
+} 
+
+ .navbar .nav-link {
+  color: #333 !important; /* Ensure dark text for nav links */
+  text-decoration: none;
+} */
+
+.navbar-toggler-icon {
+  background-color: #333; /* Toggler icon color */
+}
+
+.navbar .dropdown-menu {
+  background-color: #f8f9fa; /* Light background for dropdown */
+}
+
+.navbar .dropdown-item {
+  color: #333; /* Dark color for dropdown items */
+}
+
+.navbar .nav-link:hover, .navbar .dropdown-item:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    display: none; /* Hide navbar-collapse by default */
+  }
+
+  .navbar-collapse.show {
+    display: block; /* Show navbar-collapse when open class is applied */
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+/* In src/App.css or your custom CSS file */
+.custom-toggler {
+  background-color: rgb(248, 246, 246) !important;
+  border: none; /* Removes default border */
+  color: black; /* Optionally change the color of the icon (hamburger) */
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: none; /* Remove the default hamburger icon */
+  position: relative;
+}
+
+.custom-toggler .navbar-toggler-icon::before {
+  content: "☰"; /* You can replace this with your custom icon if needed */
+  font-size: 30px;
+  
+}
+/* Example CSS (App.css) */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #000;
+  overflow-x: hidden;
+}
+.top-header {
+  background-color: #f88c91;
+    display: inline-block;
+    line-height: 45px;
+    width: 100%;
+}
+
+.header-top-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  /* Ensures responsiveness when screen size is small */
+}
+
+.language-dropdown .dropdown-toggle {
+  background: none;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  color: white;
+  padding: 0;
+  margin-right: 20px;
+}
+.contact li {
+  display: inline-block;
+  position: relative;
+  padding: 0 28px;
+  margin-left: -346px;
+}
+.contact li::after {
+  background-color: #feaaae;
+  content: "";
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+}
+.contact li a {
+  font-size: 14px;
+  color: #f1e6e6;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.contact {
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+.contact li a i {
+  margin-right: 5px;  /* Adds space between the icon and text */
+}
+
+.social-icons ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.top-header .language-dropdown.dropdown::after, .top-header .contact li::after {
+  background-color: #feaaae;
+  content: "";
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+}
+.social-icons ul li {
+  display: inline-block;
+  position: relative;
+  padding: 0 12px;
+}
+
+.social-icons ul li a {
+  font-size: 20px;
+  color: #e9e8e8;
+  text-decoration: none;
+}
+
+.social-icons ul li a:hover {
+  color: #007bff;  /* Change color on hover */
+}
+.top-header .social-icons li::after {
+  background-color: #feaaae;
+  content: "";
+  display: inline-block;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-top-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact li {
+    margin-top: 10px;
+  }
+  .social-icons ul {
+    margin-top: 10px;
+  }
+}
+.navbar-nav .nav-dropdown .dropdown-toggle::after {
+  content: "\f0d7"; /* This is the FontAwesome down arrow */
+  font-family: 'FontAwesome';
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+margin-left: 503px;
+      flex-basis: auto;
+      height: 161px;
+  }
+}
+
+/*nav*/
+.navbar{
+  height: 125px;
+  display: flex;
+  background-color: #fff;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+}
+.nav-logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-logo p{
+  color: black;
+  
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+}
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.nav-login-cart{
+  display: flex;
+  align-items: center;
+  
+}
+.nav-login-cart button{
+  width: 100px;
+  contain-intrinsic-height: 58px;
+  outline:none;
+  border:1px solid black;
+  border-radius: 75px;
+  color:#515151;
+  font-size: 20px;
+  font-weight: 500;
+  background: white;
+  cursor: pointer;
+}
+.nav-login-cart button:active{
+  background: #f3f3f3;
+}
+.nav-cart-count{
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -43px;
+    margin-left: 25px;
+  border-radius: 11px;
+  font-size: 14px;
+  background: red;
+  color: white;
+}
+
+.navbar .nav-link {
+  font-size: 1rem;
+  padding: 10px 20px;
+} */
+/*.nav-cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0.75rem;
+}*/
+
+
+  /* img, svg {
+    vertical-align: middle;
+    margin-right: -80px;
+} */
+ /* Ensure the dropdown menu appears only on hover for specific sections */
+ .hover-dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown on hover */
+  }
+  
+  /* By default, hide the dropdown menu */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  /* Optional: Style adjustments for dropdown appearance */
+  .navbar .nav-link {
+    color: #000 !important;  /* Adjust color as needed */
+  }
+  
+  .navbar .nav-link:hover {
+    color: #fff !important;  /* Adjust hover color as needed */
+  }
+  
+  .navbar .dropdown-menu {
+    background-color: #f8f9fa;  /* Optional background color */
+  }
+  
+  
+  /*Custom CSS for additional responsiveness */
+  @media screen and(max-width: 991px) {
+      .navbar .nav-link {
+        font-size: 0.9rem;
+      }
+    
+      .navbar .navbar-brand p {
+        font-size: 1.2rem;
+      }
+    
+      .navbar .cart-icon {
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+    
+    .navbar .nav-link{
+      color: black;
+    }
+  //
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* img, svg {
+      vertical-align: middle;
+      margin-right: -80px;
+  } */
+   /* Ensure the dropdown menu appears only on hover for specific sections */
+   
+  
+  /*Custom CSS for additional responsiveness */
+  @media screen and(max-width: 991px) {
+      .navbar .nav-link {
+        font-size: 0.9rem;
+      }
+    
+      .navbar .navbar-brand p {
+        font-size: 1.2rem;
+      }
+    
+      .navbar .cart-icon {
+        font-size: 1.5rem;
+        color: white;
+      }
+    }
+    
+    .navbar .nav-link{
+      color: black;
+    }
+  /* Base styles for navbar */
+  .navbar {
+    background-color: #fff;
+    padding: 1rem;
+  }
+  
+  /* Dropdown menu styles */
+  .navbar .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Show submenu on hover */
+  .navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Dropdown menu positioning */
+  .navbar .dropdown-menu {
+    min-width: 200px; /* Customize width */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dropdown item styles */
+  .navbar .dropdown-menu .dropdown-item {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #007bff;
+  }
+  
+  /* Cart icon styling */
+  .navbar .position-relative {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Cart count badge styling */
+  .navbar .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    font-size: 0.75rem;
+  }
+  
+  /* Logo styling */
+  .nav-logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  /* Ensure navbar items are aligned */
+  .navbar .nav-link {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #007bff;
+  }
+  
+  /* Styles for collapsible menu in mobile view */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      display: block;
+    }
+  
+    .navbar .navbar-toggle {
+      display: block;
+    }
+  }
+  
+  ////
+  import React from 'react';
+  import { Dropdown } from 'react-bootstrap';
+  import { FaGlobe, FaPhoneAlt , FaFacebookSquare, FaTwitter, FaPinterest, FaInstagram, FaSkype, FaDribbble } from 'react-icons/fa';
+  import './App.css';  // Make sure you have custom CSS if needed
+  
+  const TopHeader = () => {
+    return (
+      <div className="top-header">
+        {/* Container */}
+        <div className="container">
+          <div className="header-top-info d-flex justify-content-between align-items-center flex-wrap">
+            {/* Language Dropdown */}
+            <Dropdown className="language-dropdown">
+              <Dropdown.Toggle variant="link" id="language" className="btn dropdown-toggle" aria-haspopup="true" aria-expanded="true">
+                <FaGlobe /> Languages: English
+              </Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#" title="Danish"><FaGlobe /> Danish</Dropdown.Item>
+                <Dropdown.Item href="#" title="German"><FaGlobe /> German</Dropdown.Item>
+                <Dropdown.Item href="#" title="French"><FaGlobe /> French</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+  
+            {/* Contact Info */}
+            <ul className="contact mb-0">
+              <li>
+                <a href="tel:1-800-23-456-7890" title="1-800-23-456-7890">
+                  <FaPhoneAlt /> Phone: 6379056103
+                </a>
+              </li>
+            </ul>
+  
+            {/* Social Icons */}
+            <div className="social-icons">
+              <ul className="d-flex mb-0">
+                <li><a title="Facebook" href="#"><FaFacebookSquare /></a></li>
+                <li><a title="Twitter" href="#"><FaTwitter /></a></li>
+                <li><a title="Pinterest" href="#"><FaPinterest /></a></li>
+                <li><a title="Instagram" href="#"><FaInstagram /></a></li>
+                <li><a title="Skype" href="#"><FaSkype /></a></li>
+                <li><a title="Dribbble" href="#"><FaDribbble /></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        {/* End of Container */}
+      </div>
+    );
+  };
+  
+  export default TopHeader;
+  
+  import React from 'react';
+  import { Dropdown } from 'react-bootstrap';
+  import { FaGlobe, FaPhoneAlt , FaFacebookSquare, FaTwitter, FaPinterest, FaInstagram, FaSkype, FaDribbble } from 'react-icons/fa';
+  import './App.css';  // Make sure you have custom CSS if needed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Base Styles */
+.top-header {
+  background-color: #f88c91;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.language-dropdown .btn {
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  padding-right: 15px;
+  border-right: 1px solid #fff; /* Adds vertical line */
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #fff; /* Adds vertical line */
+}
+
+.contact li {
+  list-style: none;
+  margin: 0 5px;
+}
+
+.contact li a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.social-icons ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.social-icons li {
+  padding: 0 10px;
+  position: relative;
+}
+
+.social-icons li::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 92%;
+  transform: translateY(-50%);
+  height: 16px; /* Match the icon size */
+  border-right: 1px solid #fff; /* Vertical line color */
+}
+
+.social-icons li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+/* Below 472px: Vertical Center Alignment */
+@media (max-width: 472px) {
+  .top-header .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center !important; /* Force center alignment */
+  }
+
+  .left-section, .social-icons {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+
+  .language-dropdown, .contact li {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .contact li {
+      list-style: none;
+      padding-left: 0 !important;
+      text-align: center;
+  }
+
+  .contact li a {
+      color: #fff;
+      font-size: 14px;
+      margin: 0 28px;
+  }
+
+  .social-icons ul {
+      display: flex;
+      justify-content: center; /* Horizontally center the icons */
+      align-items: center;    /* Vertically align the icons */
+      padding: 0;
+      margin: 0;
+  }
+
+  .social-icons li a {
+      font-size: 16px;
+      margin: 0 0px; /* Equal spacing on both sides of the icons */
+      display: flex;
+      justify-content: center; /* Center the icon within the link container */
+      align-items: center;
+  }
+
+  .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding-left: 112px;
+  }
+
+  .language-dropdown .btn {
+      border-right: none; /* Removes vertical line */
+  }
+
+  .contact {
+      border-right: none; /* Removes vertical line */
+  }
+
+  .social-icons li:not(:last-child)::after {
+      border-right: none; /* Removes vertical line */
+  }
+
+  .social-icons li::after {
+      border-right: none; /* Removes vertical line */
+  }
+}
+
+/* Between 473px and 991px: Group Language & Contact in One Column, Separate Icons */
+@media (min-width: 473px) and (max-width: 991px) {
+  .top-header .container {
+      display: flex;
+      flex-direction: column; /* Arrange rows */
+      align-items: center; /* Center content horizontally */
+      flex-wrap: wrap;
+  }
+
+  /* Language and Contact in the first row, centered */
+  .left-section {
+      display: flex;
+      flex-direction: row; /* Arrange items in a row */
+      justify-content: center; /* Center within the container */
+      align-items: center;
+      width: 100%; /* Full width of the container */
+      margin-bottom: 15px;
+  }
+
+  .language-dropdown, .contact li {
+      margin: 0 15px; /* Space between language and contact */
+      text-align: center;
+  }
+
+  .contact li {
+      list-style: none;
+      padding-left: 0;
+  }
+
+  /* Social Icons in the second row, centered */
+  .social-icons {
+      display: flex;
+      justify-content: center; /* Center the social icons */
+      width: 100%; /* Full width for the second row */
+      margin-top: 10px;
+  }
+
+  .social-icons ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: center; /* Center the icons within the row */
+  }
+
+  .social-icons li {
+      padding: 0 10px;
+  }
+
+  .social-icons li a {
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+  }
+
+  .social-icons li:not(:last-child)::after {
+      border-right: none; /* Removes vertical line */
+  }
+
+  .language-dropdown .btn {
+      border-right: none;
+  }
+
+  .contact {
+      border-right: none;
+  }
+
+  .social-icons li::after {
+      border-right: none; /* Removes vertical line */
+  }
+}
+
+/* Above 992px: Normal Alignment with Left-Right Sections */
+@media (min-width: 992px) {
+  .top-header .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .left-section {
+      justify-content: flex-start;
+      width: auto;
+  }
+
+  .social-icons {
+      justify-content: flex-end;
+      width: auto;
+  }
+
+  .language-dropdown {
+      display: inline-block;
+      position: relative; /* Ensure this is relative to position the pseudo-element */
+      padding-right: 10px; /* Optional: Adds space between the content and the border */
+  }
+
+  .language-dropdown::after {
+      content: ''; /* Creates the pseudo-element */
+      position: absolute; /* Positions it absolutely relative to .language-dropdown */
+      top: -10px; /* Aligns the line to the top of the element */
+      right: 0; /* Aligns it to the right side */
+      width: 1px; /* Sets the thickness of the vertical line */
+      height: 55px; /* Adjust the height of the vertical line */
+      background-color: #fff; /* The color of the vertical line */
+  }
+
+  .language-dropdown .btn {
+      border-right: none;
+  }
+
+  .contact {
+      display: flex;
+      align-items: center;
+      padding-left: 15px;
+      padding-right: 14px;
+      position: relative; /* Makes the element a reference point for the pseudo-element */
+      border-right: none;
+  }
+
+  .contact::after {
+      content: ''; /* Creates the pseudo-element */
+      position: absolute; /* Positions it absolutely relative to .contact */
+      top: 10; /* Starts at the top of the contact element */
+      right: 0; /* Aligns it to the right side of the element */
+      width: 1px; /* The thickness of the vertical line */
+      height: 300px; /* The desired height of the vertical line (adjust this value) */
+      background-color: #fff; /* The color of the vertical line */
+  }
+
+  .social-icons li::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0px;
+      transform: translateY(-50%);
+      height: 180px; /* Match the icon size */
+      border-right: 1px solid #fff; /* Vertical line color */
+  }
+}
+@media (min-width: 1024px) {
+  .top-header .container {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+  }
+}
+
+.top-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%; /* Ensure full width is applied here */
+}

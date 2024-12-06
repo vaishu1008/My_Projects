@@ -1,0 +1,158 @@
+
+ /*nav*/
+ .navbar-nav .nav-dropdown .dropdown-toggle::after {
+  content: "\f0d7"; /* This is the FontAwesome down arrow */
+  font-family: 'FontAwesome';
+}
+/* @media (min-width: 992px) { */
+  /* .navbar-expand-lg .navbar-collapse {
+      display: flex !important;
+margin-left: 503px;
+      flex-basis: auto;
+      height: 161px;
+  }
+} */
+
+
+
+@media screen and(max-width: 991px) {
+  .navbar .nav-link {
+    font-size: 0.9rem;
+  }
+
+  .navbar .navbar-brand p {
+    font-size: 1.2rem;
+  }
+
+  .navbar .cart-icon {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+
+.navbar .nav-link{
+  color: black;
+  /* background-color: orange; */
+}
+.navbar .nav-link:hover{
+  background-color:#ffbb63;
+  transition-property: all;
+
+}
+/* Base styles for navbar */
+.navbar {
+background-color: #fff;
+padding: 1rem;
+/* height: 110px; */
+}
+
+/* Dropdown menu styles */
+.navbar .dropdown-menu {
+position: absolute;
+top: 100%;
+left: 0;
+display: none;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.3s ease;
+}
+
+/* Show submenu on hover */
+.navbar .dropdown:hover .dropdown-menu {
+display: block;
+opacity: 1;
+visibility: visible;
+
+}
+
+/* Dropdown menu positioning */
+.navbar .dropdown-menu {
+min-width: 200px; /* Customize width */
+background-color: #ffbb63;
+border: 1px solid #ddd;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+transition: 0.3s;
+ 
+}
+
+/* Dropdown item styles */
+.navbar .dropdown-menu .dropdown-item {
+padding: 10px 20px;
+color: #333;
+text-decoration: none;
+
+position: relative;
+transition: all 1s ease 0s;
+-webkit-transition: all 1s ease 0s;
+  
+  background-color: #ffbb63;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+background-color: #f1f1f1;
+color: #007bff;
+}
+
+/* Cart icon styling */
+.navbar .position-relative {
+display: flex;
+align-items: center;
+}
+
+/* Cart count badge styling */
+.navbar .badge {
+position: absolute;
+top: 0;
+right: 0;
+transform: translate(50%, -50%);
+font-size: 0.75rem;
+}
+
+/* Logo styling */
+.nav-logo {
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+/* Ensure navbar items are aligned */
+.navbar .nav-link {
+font-size: 1rem;
+color: #333;
+}
+
+.navbar .nav-link:hover {
+color: #007bff;
+}
+
+/* Styles for collapsible menu in mobile view */
+@media (max-width: 991px) {
+.navbar-collapse {
+  display: block;
+}
+
+.navbar .navbar-toggle {
+  display: block;
+}
+}
+
+@media (min-width:472) {
+  .margin{
+  margin-left: 150px;
+  }
+  .navbar{
+    height:110px;
+  }
+}
+
+
+/* Style the dropdown items */
+
+
+
+
+
+
+
+
+
+

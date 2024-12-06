@@ -1,0 +1,109 @@
+
+.carousel-item-1 {
+  background-image: url('../images/img1.jpg'); 
+  background-size: cover;                       
+  background-position: center;                
+  height: 600px;                             
+}
+
+.carousel-item-2 {
+  background-image: url('../images/img9.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.carousel-item-3 {
+  background-image: url('../images/img10.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+.carousel-caption {
+  position: absolute;
+  top: 10%; 
+  left: 45%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+  width: 60%;
+  margin: 48px 64px 64px 64px;
+  background-color: rgba(255, 187, 99, 0.851);
+  transition: 0.3s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-behavior: normal;
+  height: 430px;
+  text-align: center;
+}
+.carousel-caption h2 {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+.carousel-caption p {
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-top: 52px;
+
+}
+.btn-get-started {
+  margin: 60px 10px;
+  padding: 9px 32px;
+  
+  color: #fff;
+  border: 1px solid #f3f2f0;
+  height: 40px;
+  text-decoration: none;
+  line-height: 2px;
+  width: 25%;
+  border-radius: none;
+  border-radius: 0px;
+  background-color: transparent;
+  text-align: center;
+ 
+  align-items: center; 
+  justify-content: center; 
+  display: inline-block; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  
+  vertical-align: middle; 
+  line-height: normal; 
+}
+.btn-get-started:hover {
+  background-color:#050505;
+}
+@media (max-width:472px) {
+    .carousel-caption {
+        position: absolute;
+        top: 10%; 
+        left: 35%;
+        transform: translateX(-50%);
+        text-align: center;
+        color: #fff;
+        z-index: 3;
+        width: 60%;
+        margin: 48px 64px 64px 64px;
+        background-color: rgba(255, 187, 99, 0.851);
+        transition: 0.3s;
+        transition-property: all;
+        transition-duration: 0.3s;
+        transition-timing-function: ease;
+        transition-delay: 0s;
+        transition-behavior: normal;
+        height: 504px;
+        text-align: center;
+      }
+      
+
+}
+@media (max-width:768px) {
+    .carousel-caption {
+        height: 500px;
+}
+}
